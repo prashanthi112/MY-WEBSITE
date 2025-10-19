@@ -1,48 +1,157 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* ===========================
+   General Styles
+=========================== */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
+body {
+    background-color: #f0f4f8; /* Softer light background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===========================
+   Header
+=========================== */
 header {
-    background-color: #2e8b57;
+    background-color: #4a90e2; /* Updated to modern blue */
     color: white;
-    padding: 20px 0;
     text-align: center;
+    padding: 25px 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
+header h1 {
+    font-size: 2.8rem;
+    letter-spacing: 1px;
+}
+
+/* ===========================
+   Navigation
+=========================== */
 nav {
-    background-color: #3cb371;
-    display: flex;
-    justify-content: center;
+    background-color: #e1ecf7; /* Soft complementary color */
+    text-align: center;
+    padding: 12px 0;
 }
 
 nav a {
-    color: white;
     text-decoration: none;
-    padding: 15px 25px;
-    display: block;
-    font-weight: bold;
+    color: #333;
+    font-weight: 600;
+    margin: 0 18px;
+    transition: color 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-    background-color: #2e8b57;
+    color: #4a90e2;
+    transform: scale(1.05);
 }
 
-.container {
-    width: 80%;
-    margin: 20px auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+nav a[aria-current="page"] {
+    color: #4a90e2;
+    border-bottom: 2px solid #4a90e2;
 }
 
+/* ===========================
+   Container / Main Content
+=========================== */
+.container, main, .contact-section {
+    max-width: 1100px; /* Increased max-width for more spacious layout */
+    margin: 50px auto;
+    padding: 0 25px;
+    text-align: center;
+}
+
+h2 {
+    color: #4a90e2;
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+}
+
+/* ===========================
+   Paragraphs
+=========================== */
+p {
+    font-size: 1.15rem;
+    margin-bottom: 22px;
+}
+
+/* ===========================
+   Footer
+=========================== */
 footer {
-    background-color: #2e8b57;
+    background-color: #4a90e2;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
+    padding: 20px 0;
+    margin-top: 50px;
 }
+
+/* ===========================
+   Products Page - Updated Gallery
+=========================== */
+.products-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 35px;
+    margin-top: 40px;
+    justify-items: center;
+}
+
+.product {
+    background-color: #ffffff; /* Clean white product box */
+    padding: 25px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 350px; /* Slightly larger boxes */
+    box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 18px rgba(0,0,0,0.15);
+}
+
+.product-images img {
+    width: 100%;           /* full width of the card */
+    height: auto;          /* keep natural aspect ratio */
+    max-height: none;      /* remove height limit */
+    object-fit: contain;   /* show entire image without cropping */
+    border-radius: 10px;   /* optional rounded corners */
+    margin-top: 12px;
+    background-color: white; /* optional, to match clean product background */
+}
+
+/* ===========================
+   Contact Page Form
+=========================== */
+.contact-form {
+  max-width: 500px; /* optional, controls form width */
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* <-- adjust this value to change space between label and input */
+  margin-bottom: 15px; /* space between rows */
+}
+
+label {
+  width: 100px; /* optional: makes labels the same width */
+  font-weight: bold;
+}
+
+input, textarea {
+  flex: 1; /* makes input/textarea take remaining space */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+  
