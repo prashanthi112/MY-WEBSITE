@@ -22,12 +22,22 @@
   <main>
     <section class="contact-section">
       <h2>Contact Us</h2>
-       <form>
-      <label>Name: <input type="text" name="name"></label><br><br>
-      <label>Email: <input type="email" name="email"></label><br><br>
-      <label>Message: <textarea name="message"></textarea></label><br><br>
-      <button type="submit">Send</button>
-    </form>
+      <form action="mailto:prashanthi.gpn@gmail.com" method="post" enctype="text/plain">
+  
+  <label>Name:</label><br>
+  <input type="text" name="Name" required><br><br>
+
+  <label>Email:</label><br>
+  <input type="email" name="Email" required><br><br>
+
+  <label>Message:</label><br>
+  <textarea name="Message" rows="5" cols="40" required></textarea><br><br>
+
+  <input type="submit" value="Send">
+  <input type="reset" value="Reset">
+
+</form>
+
     </section>
   </main>
 

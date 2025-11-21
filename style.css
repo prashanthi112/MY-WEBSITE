@@ -1,6 +1,4 @@
-/* ===========================
-   General Styles
-=========================== */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +7,14 @@
 }
 
 body {
-    background-color: #f0f4f8; /* Softer light background */
+    background-color: #f0f4f8; 
     color: #333;
     line-height: 1.6;
 }
 
-/* ===========================
-   Header
-=========================== */
+
 header {
-    background-color: #4a90e2; /* Updated to modern blue */
+    background-color: #4a90e2; 
     color: white;
     text-align: center;
     padding: 25px 0;
@@ -30,11 +26,9 @@ header h1 {
     letter-spacing: 1px;
 }
 
-/* ===========================
-   Navigation
-=========================== */
+
 nav {
-    background-color: #e1ecf7; /* Soft complementary color */
+    background-color: #e1ecf7; 
     text-align: center;
     padding: 12px 0;
 }
@@ -57,11 +51,9 @@ nav a[aria-current="page"] {
     border-bottom: 2px solid #4a90e2;
 }
 
-/* ===========================
-   Container / Main Content
-=========================== */
+
 .container, main, .contact-section {
-    max-width: 1100px; /* Increased max-width for more spacious layout */
+    max-width: 1100px; 
     margin: 50px auto;
     padding: 0 25px;
     text-align: center;
@@ -73,17 +65,13 @@ h2 {
     font-size: 2.2rem;
 }
 
-/* ===========================
-   Paragraphs
-=========================== */
+
 p {
     font-size: 1.15rem;
     margin-bottom: 22px;
 }
 
-/* ===========================
-   Footer
-=========================== */
+
 footer {
     background-color: #4a90e2;
     color: white;
@@ -92,9 +80,7 @@ footer {
     margin-top: 50px;
 }
 
-/* ===========================
-   Products Page - Updated Gallery
-=========================== */
+
 .products-gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -104,11 +90,11 @@ footer {
 }
 
 .product {
-    background-color: #ffffff; /* Clean white product box */
+    background-color: #ffffff; 
     padding: 25px;
     border-radius: 12px;
     width: 100%;
-    max-width: 350px; /* Slightly larger boxes */
+    max-width: 350px; 
     box-shadow: 0 6px 10px rgba(0,0,0,0.1);
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -119,20 +105,18 @@ footer {
 }
 
 .product-images img {
-    width: 100%;           /* full width of the card */
-    height: auto;          /* keep natural aspect ratio */
-    max-height: none;      /* remove height limit */
-    object-fit: contain;   /* show entire image without cropping */
-    border-radius: 10px;   /* optional rounded corners */
+    width: 100%;           
+    height: auto;          
+    max-height: none;     
+    object-fit: contain;   
+    border-radius: 10px;   
     margin-top: 12px;
-    background-color: white; /* optional, to match clean product background */
+    background-color: white; 
 }
 
-/* ===========================
-   Contact Page Form
-=========================== */
+
 .contact-form {
-  max-width: 500px; /* optional, controls form width */
+  max-width: 500px; 
 }
 
 .form-group {
@@ -148,7 +132,7 @@ label {
 }
 
 input, textarea {
-  flex: 1; /* makes input/textarea take remaining space */
+  flex: 1; 
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
